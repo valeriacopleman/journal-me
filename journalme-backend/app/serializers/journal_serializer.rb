@@ -1,3 +1,4 @@
 class JournalSerializer < ActiveModel::Serializer
-  attributes :id, :entry, :goal, :created_at
+  attributes :id, :entry, :goal
+  belongs_to :user
 end
